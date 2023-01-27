@@ -3,6 +3,7 @@
 # Files and directories created by pub
 .dart_tool/
 .packages
+.gradle
 build/
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
@@ -19,3 +20,20 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### VS Code ###
+.vscode/
+.history/
+
+# System related
+*.DS_Store
+Thumbs.db
