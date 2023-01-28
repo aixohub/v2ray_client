@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
-import '../model/locale.dart';
+import '../../model/locale.dart';
 
 class Logcat extends StatelessWidget {
   const Logcat({Key? key}) : super(key: key);

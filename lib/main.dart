@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
-import 'package:v2ray_client/views/logcat.dart';
+import 'package:v2ray_client/views/menu_view/copy_from_clip.dart';
+import 'package:v2ray_client/views/menu_view/logcat.dart';
+import 'package:v2ray_client/views/menu_view/pic_gen.dart';
+import 'package:v2ray_client/views/menu_view/pop_menu.dart';
+import 'package:v2ray_client/views/page_home.dart';
 
 import 'model/locale.dart';
-import 'views/home.dart';
-import 'views/settings.dart';
+import 'views/menu_view/settings.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +23,7 @@ class MyApp extends StatelessWidget {
       create: (context) => LocaleModel(),
       child: Consumer<LocaleModel>(
         builder: (context, localeModel, child) => MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Recipes',
           theme: ThemeData(
             primarySwatch: Colors.purple,
@@ -28,9 +32,13 @@ class MyApp extends StatelessWidget {
           supportedLocales: AppLocalizations.supportedLocales,
           locale: localeModel.locale,
           routes: {
-            '/': (context) => const Home(),
+            '/': (context) => const PageHome(),
             '/settings': (context) => const Settings(),
             '/show_log': (context) => const Logcat(),
+            '/pic_gen': (context) => const MyHomePage(),
+            '/PopupMenu': (context) => const PopupMenuAdd(),
+            '/CopyAndPaste': (context) => CopyAndPaste(),
+
           },
           initialRoute: '/',
         ),

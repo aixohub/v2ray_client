@@ -46,6 +46,7 @@
       }
     }
   },
+  "avatar_generator": "生成头像",
   "app_widget_name": "开关",
   "app_tile_name": "开关",
   "app_tile_first_use": "初次使用此功能请先用APP添加配置",
