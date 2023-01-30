@@ -38,8 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
             DrawerHeader(
               child: Center(
                 child: Text(
-                  t.pageHomeDrawerHeader,
-                  style: TextStyle(
+                  t.pageDrawerHeaderHome,
+                  style: const TextStyle(
                       color: kPrimaryClr,
                       fontSize: 25,
                       fontWeight: FontWeight.bold),
@@ -79,8 +79,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontSize: 18, fontWeight: FontWeight.bold)),
               trailing: const Icon(Icons.arrow_forward_ios),
             ),
-            Spacer(),
-            Text("V1.0.0", style: TextStyle(fontSize: 16, color: Colors.grey)),
+            const Spacer(),
+            const Text("V1.0.0",
+                style: TextStyle(fontSize: 16, color: Colors.grey)),
           ],
         ),
       ),
@@ -184,15 +185,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: [
                       Text(
-                        "Select Location",
-                        style: TextStyle(
+                        t.page_Home_select_server,
+                        style: const TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
                             color: secndryColor),
                       ),
-                      Icon(
+                      const Icon(
                         Icons.keyboard_arrow_down,
                         color: secndryColor,
                       )

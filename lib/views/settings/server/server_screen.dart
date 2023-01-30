@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../../constants.dart';
 import '../../../model/server_model.dart';
-
-
 
 class ServerScreen extends StatefulWidget {
   const ServerScreen({Key? key}) : super(key: key);
@@ -15,13 +13,15 @@ class ServerScreen extends StatefulWidget {
 class _ServerScreenState extends State<ServerScreen> {
   @override
   Widget build(BuildContext context) {
+    var t = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: bgColor,
         iconTheme: const IconThemeData(color: secndryColor),
         actionsIconTheme: const IconThemeData(color: secndryColor),
         elevation: 0,
-        title: const Text("Server List", style: TextStyle(color: secndryColor)),
+        title: Text(t.page_title_server_list,
+            style: const TextStyle(color: secndryColor)),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),

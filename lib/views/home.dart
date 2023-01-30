@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
                 color: Colors.purple,
               ),
               child: Text(
-                t.pageHomeDrawerHeader,
+                t.pageDrawerHeaderHome,
                 style: theme.textTheme.headline3,
               ),
             ),

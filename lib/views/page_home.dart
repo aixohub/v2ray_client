@@ -105,7 +105,7 @@ class PageHomeState extends State<PageHome> {
                 color: Colors.purple,
               ),
               child: Text(
-                t.pageHomeDrawerHeader,
+                t.pageDrawerHeaderHome,
                 style: theme.textTheme.headline3,
               ),
             ),
