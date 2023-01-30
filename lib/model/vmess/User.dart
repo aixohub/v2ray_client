@@ -1,18 +1,34 @@
-class User {
-  String? id;
-  int? alterId;
+class UsersItem {
+  /// <summary>
+  ///
+  /// </summary>
+  String id;
 
-  User({this.id, this.alterId});
+  /// <summary>
+  ///
+  /// </summary>
+  int alterId;
 
-  User.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    alterId = json['alterId'];
-  }
+  /// <summary>
+  ///
+  /// </summary>
+  String email;
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['alterId'] = this.alterId;
-    return data;
-  }
+  /// <summary>
+  ///
+  /// </summary>
+  String security;
+
+  /// <summary>
+  /// VLESS
+  /// </summary>
+  String encryption;
+
+  /// <summary>
+  /// VLESS
+  /// </summary>
+  String flow;
+
+  UsersItem(this.id, this.alterId, this.email, this.security, this.encryption,
+      this.flow);
 }

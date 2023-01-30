@@ -1,19 +1,44 @@
+import 'User.dart';
 
 class InboundSetting {
   String? auth;
   bool? udp;
+  String ip;
 
-  InboundSetting({this.auth, this.udp});
+  /// <summary>
+  /// api 使用
+  /// </summary>
+  String address;
 
-  InboundSetting.fromJson(Map<String, dynamic> json) {
-    auth = json['auth'];
-    udp = json['udp'];
-  }
+  /// <summary>
+  ///
+  /// </summary>
+  List<UsersItem> clients;
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['auth'] = this.auth;
-    data['udp'] = this.udp;
-    return data;
-  }
+  /// <summary>
+  /// VLESS
+  /// </summary>
+  String? decryption;
+
+  bool allowTransparent;
+
+  List<AccountsItem> accounts;
+
+  InboundSetting(this.auth, this.udp, this.ip, this.address, this.clients,
+      this.decryption, this.allowTransparent, this.accounts);
+}
+
+
+class AccountsItem {
+  /// <summary>
+  ///
+  /// </summary>
+  String user;
+
+  /// <summary>
+  ///
+  /// </summary>
+  String pass;
+
+  AccountsItem(this.user, this.pass);
 }
