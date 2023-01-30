@@ -17,24 +17,7 @@ class Home extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            RecipeCard(
-              image: "assets/images/unsplash_salad.jpg",
-              name: t.pageHomeRecipeSaladName,
-              description: t.pageHomeRecipeSaladDescription,
-              author: t.pageHomeRecipeAuthor("John Doe"),
-              created: t.pageHomeRecipeCreated(DateTime.parse("2022-03-22")),
-              votes: t.pageHomeRecipeVotes(179),
-            ),
-            RecipeCard(
-              image: "assets/images/unsplash_eggs.jpg",
-              name: t.pageHomeRecipeFriedEggsName,
-              description: t.pageHomeRecipeFriedEggsDescription,
-              author: t.pageHomeRecipeAuthor("Mark Gonzales"),
-              created: t.pageHomeRecipeCreated(DateTime.parse("2022-02-09")),
-              votes: t.pageHomeRecipeVotes(103),
-            ),
-          ],
+          children: <Widget>[],
         ),
       ),
       drawer: Drawer(

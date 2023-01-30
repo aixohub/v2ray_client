@@ -4,41 +4,9 @@
   "pageHomeDrawerHeader": "V2rayNG",
   "pageHomeDrawerListTileSettings": "设置",
   "pageHomeDrawerListTileLog": "日志",
+  "pageSettingsTitle": "Settings",
+  "pageTitleLog": "Logcat",
   "pageHomeRecipeAuthor": "by {name}",
-  "@pageHomeRecipeAuthor": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "pageHomeRecipeCreated": "created {date}",
-  "@pageHomeRecipeCreated": {
-    "placeholders": {
-      "date": {
-        "type": "DateTime",
-        "format": "yMd"
-      }
-    }
-  },
-  "pageHomeRecipeVotes": "{count, plural, =1 {{count} vote} other {{count} votes}}",
-  "@pageHomeRecipeVotes": {
-    "description": "The gen_l10n does not handle properly plural forms: zero, one, and two. Check the reported issue for more details: https://github.com/flutter/flutter/issues/84291",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "pageHomeRecipeSaladName": "Salad",
-  "pageHomeRecipeSaladDescription": "Fresh vegetable salad full of vitamins, fiber and minerals.",
-  "pageHomeRecipeRiceName": "Rice",
-  "pageHomeRecipeRiceDescription": "Rice with vegetables and beans. A nutritious meal high in fiber.",
-  "pageHomeRecipeFriedEggsName": "Fried eggs",
-  "pageHomeRecipeFriedEggsDescription": "A meal full of protein and minerals.",
-  "pageSettingsTitle": "设置",
-  "pageTitleLog": "日志",
-  "pageSettingsInputLanguage": "{locale, select,  en {English} zh {中文} other {-}}",
   "@pageSettingsInputLanguage": {
     "placeholders": {
       "locale": {
@@ -47,6 +15,11 @@
     }
   },
   "avatar_generator": "生成头像",
+
+  "settings_change_language":"多语言",
+  "settings_language_set":"语言设置",
+  "settings_share_app":"分享",
+  "settings_about":"关于",
   "app_widget_name": "开关",
   "app_tile_name": "开关",
   "app_tile_first_use": "初次使用此功能请先用APP添加配置",

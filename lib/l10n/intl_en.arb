@@ -1,44 +1,12 @@
 {
   "@@locale": "en",
-  "pageHomeTitle": "config list",
+  "pageHomeTitle": "V2rayNG",
   "pageHomeDrawerHeader": "V2rayNG",
   "pageHomeDrawerListTileSettings": "Settings",
   "pageHomeDrawerListTileLog": "Logcat",
-  "pageHomeRecipeAuthor": "by {name}",
-  "@pageHomeRecipeAuthor": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "pageHomeRecipeCreated": "created {date}",
-  "@pageHomeRecipeCreated": {
-    "placeholders": {
-      "date": {
-        "type": "DateTime",
-        "format": "yMd"
-      }
-    }
-  },
-  "pageHomeRecipeVotes": "{count, plural, =1 {{count} vote} other {{count} votes}}",
-  "@pageHomeRecipeVotes": {
-    "description": "The gen_l10n does not handle properly plural forms: zero, one, and two. Check the reported issue for more details: https://github.com/flutter/flutter/issues/84291",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "pageHomeRecipeSaladName": "Salad",
-  "pageHomeRecipeSaladDescription": "Fresh vegetable salad full of vitamins, fiber and minerals.",
-  "pageHomeRecipeRiceName": "Rice",
-  "pageHomeRecipeRiceDescription": "Rice with vegetables and beans. A nutritious meal high in fiber.",
-  "pageHomeRecipeFriedEggsName": "Fried eggs",
-  "pageHomeRecipeFriedEggsDescription": "A meal full of protein and minerals.",
   "pageSettingsTitle": "Settings",
   "pageTitleLog": "Logcat",
-  "pageSettingsInputLanguage": "{locale, select, en {English}  zh {中文} other {-}}",
+  "pageHomeRecipeAuthor": "by {name}",
   "@pageSettingsInputLanguage": {
     "placeholders": {
       "locale": {
@@ -47,6 +15,10 @@
     }
   },
   "avatar_generator": "Avatar Generator",
+  "settings_change_language":"Language",
+  "settings_language_set":"Language",
+  "settings_share_app":"Share App",
+  "settings_about":"About",
   "app_widget_name": "开关",
   "app_tile_name": "开关",
   "app_tile_first_use": "初次使用此功能请先用APP添加配置",
@@ -210,6 +182,6 @@
   "connection_test_error": "失败：%s",
   "connection_test_fail": "无互联网连接",
   "connection_test_error_status_code": "状态码无效（#%d）",
-  "connection_connected": "已连接，点击测试连接",
-  "connection_not_connected": "未连接"
+  "connection_connected": "Connected",
+  "connection_not_connected": "Not Connected"
 }
